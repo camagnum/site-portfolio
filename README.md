@@ -1,5 +1,4 @@
 # Site portfólio
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5cd09899-5d91-4504-9cd3-f1bcc7c011ba/deploy-status)](https://app.netlify.com/sites/carlos-magnum/deploys)
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
