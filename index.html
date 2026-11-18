@@ -1,182 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Site portfólio de Carlos Magnum Ribeiro Benevides">
-  <title> Portfolio - Carlos Magnum Benevides </title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/a0e5fcb0d7.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="mystyle.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1221">
+<meta name="description" content="Portfólio profissional de Carlos Magnum Ribeiro Benevides. Desenvolvimento web, automação, dados e soluções low-code.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Magnum Benevides | Desenvolvedor de Software">
+<meta property="og:description" content="Tecnologia com propósito. Conheça meus projetos, competências e trajetória profissional.">
+<meta property="og:url" content="https://carlos-magnum.netlify.app/">
+<link rel="canonical" href="https://carlos-magnum.netlify.app/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="app.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Carlos Magnum Ribeiro Benevides","alternateName":"Magnum Benevides","url":"https://carlos-magnum.netlify.app/","jobTitle":"Desenvolvedor de Software","sameAs":["https://github.com/camagnum","https://www.linkedin.com/in/magnumbenevides"],"knowsAbout":["Angular","JavaScript","Python","Automação","Low-code","Desenvolvimento web"]}</script>
+<title>Magnum Benevides — Desenvolvimento, Dados & Tecnologia</title>
 </head>
-
 <body>
-  <!--NavBar Fixo ao Topo-->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light corSecundaria">
-    <a class="navbar-brand textoBranco" href="#topo">Magnum Benevides</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-
-      </ul>
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link textoBranco" href="#projetos">Projetos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link textoBranco" href="#sobre-mim">Sobre mim</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link textoBranco" href="#contato">Contato</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Apresentação -->
-  <section class="jumbotron text-center corPrimaria" id="topo">
-    <div class="container">
-      <img class="foto-perfil" src="https://i.ibb.co/6WynqLJ/magnum-perfil.jpg" alt="20160716-230232">
-      <h1 class="jumbotron-heading textoBranco">Magnum Benevides</h1>
-      <p class="lead textoBranco">Desenvolvedor - Data Scientist</p>
-      <p>
-        <a href="#contato" class="btn btn-dark my-2">Contato</a>
-      </p>
-      <a href="https://www.linkedin.com/in/magnumbenevides"><i class="textoBranco fab fa-linkedin"></i></a>
-      <a href="https://github.com/camagnum"><i class="textoBranco icones fab fa-github"></i></a>
-      <a href="https://instagram.com/camagnumrb"><i class="textoBranco icones fab fa-instagram"></i></a>
-    </div>
-  </section>
-
-  <!-- Projetos -->
-  <div class="album py-5 bg-light" style="background-color: white !important;" id="projetos">
-    <div class="container">
-
-      <h2 class="jumbotron-heading text-center titulosVerdes">Projetos</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;
-                bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Exemplo Conversor-YouTube"
-              style="height: 225px; width: 100%; display: block;" src="https://i.ibb.co/NpGkb2M/conversor-yt.png"
-              data-holder-rendered="true">
-            <div class="card-body">
-              <p class="card-text">Programa feito utilizando Python para baixar e converter vídeos do
-                YouTube para formatos .mp3 e .mp4. Foram utilizados os seguintes pacotes:
-              </p>
-              <ul>
-                <li>PySimpleGUI</li>
-                <li>Pytube</li>
-              </ul>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://github.com/camagnum/Conversor-YouTube"> <button type="button"
-                      class="btn btn-sm btn-outline-primary">Ver Código</button></a>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;
-                bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-              style="height: 225px; width: 100%; display: block;" src="https://i.ibb.co/XZxvpQf/nba-stats.png"
-              data-holder-rendered="true">
-            <div class="card-body">
-              <p class="card-text">Programa feito em Python para realizar análise de estatísticas da NBA.
-                Foram utilizados os seguintes pacotes:
-              </p>
-              <ul>
-                <li>Selenium</li>
-                <li>JSON</li>
-                <li>Pandas</li>
-              </ul>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://github.com/camagnum/analise-nba-stats-json"> <button type="button"
-                      class="btn btn-sm btn-outline-primary">Ver Código</button></a>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;
-                bg=55595c&amp;fg=eceeef&amp;text=Thumbnail" alt="Thumbnail [100%x225]"
-              style="height: 225px; width: 100%; display: block;" src="https://i.ibb.co/dPvZwCg/jogo-palavras.png"
-              data-holder-rendered="true">
-            <div class="card-body">
-              <p class="card-text">Jogo de adivinhação de palavras feito em Python.
-                Foram utilizados os seguintes pacotes:
-              </p>
-              <ul>
-                <li>PySimpleGUI</li>
-                <li>Random</li>
-                <li>String</li>
-              </ul>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="https://github.com/camagnum/jogo-adivinhar-palavra"> <button type="button"
-                      class="btn btn-sm btn-outline-primary">Ver Código</button></a>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Sobre mim-->
-  <section class="jumbotron text-center corPrimaria" id="sobre-mim">
-    <div class="container">
-      <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
-      <p class="lead textoBranco">Olá, meu nome é Magnum! Sou formado em Geofísica. Durante a graduação fui apresentado à programação
-        e imediatamente me apaixonei. Comecei estudando Fortran, depois conheci o Python e foi com ele que consegui me aprofundar muito mais na área. Com maior foco na área de Ciência de Dados, já estudei sobre automação de processos, web scraping e até mesmo desenvolvimento web e de jogos. Nesse processo estudei também banco de dados com o MySQL e um pouco de outras linguagens como Java, HTML/CSS, Javascript. Atualmente trabalho também desenvolvendo plataformas low-code.
-      </p>
-    </div>
-  </section>
-
-  <!--Contato-->
-  <section>
-    <div>
-      <div class="container-fluid" id="contato">
-        <h3 style="padding-top: 40px" class="text-center titulosVerdes">Disponível para oportunidades</h3>
-        <a href="mailto:magnumbenevides@gmail.com">
-          <h4 style="padding-bottom: 30px;
-                  margin-bottom: 0px;" class="text-center">magnumbenevides@gmail.com</h4>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!--Footer-->
-  <footer class="text-center corSecundaria" style="margin:0px; padding:0px">
-    <p class="textoFooter textoBranco">Copyright 2022</p>
-  </footer>
-</body>
-
-</html>
+<a class="skip" href="#conteudo" data-en="Skip to content">Pular para conteúdo</a>
+<header class="header"><div class="wrap header-inner">
+<a href="#topo" class="logo" aria-label="Magnum Benevides - início"><span class="logo-box">M<span>.</span></span><span>magnum<span class="accent">.</span>dev</span></a>
+<nav class="nav" id="nav" aria-label="Navegação principal">
+<a href="#sobre" data-en="About">Sobre</a><a href="#projetos" data-en="Projects">Projetos</a><a href="#trajetoria" data-en="Journey">Trajetória</a><a href="#competencias" data-en="Skills">Competências</a><a href="#contato" data-en="Contact">Contato</a>
+</nav>
+<div class="controls"><button class="control" id="lang" aria-label="Switch to English">EN</button><button class="control" id="theme" aria-label="Ativar modo claro">☀</button><button class="hamburger" id="menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button></div>
+</div></header>
+<main id="conteudo">
+<section id="topo" class="hero"><div class="wrap hero-grid">
+<div class="hero-main"><div class="eyebrow"><i></i><span data-en="SOFTWARE DEVELOPMENT · DIGITAL SOLUTIONS">DESENVOLVIMENTO DE SOFTWARE · SOLUÇÕES DIGITAIS</span></div>
+<h1><span data-en="Technology with">Tecnologia com</span><br><em data-en="purpose.">propósito.</em><br><span data-en="Solutions with impact.">Soluções com impacto.</span></h1>
+<p class="hero-lead" data-en="I'm Magnum Benevides. I transform complex problems into useful digital experiences, connecting software development, automation, data and low-code solutions.">Sou Magnum Benevides. Transformo problemas complexos em experiências digitais úteis, conectando desenvolvimento de software, automação, dados e soluções low-code.</p>
+<div class="actions"><a class="btn primary" href="#projetos"><span data-en="Explore my work">Conheça meu trabalho</span><b>↗</b></a><a class="btn outline" href="#contato"><span data-en="Let's talk">Vamos conversar</span><b>→</b></a></div>
+<div class="hero-links"><a href="https://github.com/camagnum" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/magnumbenevides" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+</div>
+<div class="hero-side"><div class="profile-card"><div class="window-top"><span class="dots">● ● ●</span> profile.ts <span class="online">●</span></div><div class="profile-body"><div class="avatar"><img src="https://i.ibb.co/6WynqLJ/magnum-perfil.jpg" alt="Retrato de Magnum Benevides" onerror="this.hidden=true;this.parentNode.classList.add('fallback')"></div><small>HELLO, WORLD!</small><strong>Magnum Benevides</strong><span data-en="Software Developer">Desenvolvedor de Software</span><div class="code-lines"><div><i>const</i> focus = [</div><div class="indent">"web", "data",</div><div class="indent">"automation", "low-code"</div><div>];</div><div><i>build</i>(focus, "impact");</div></div></div></div><div class="chip chip-top">⌘ &nbsp; Full-stack mindset</div><div class="chip chip-bottom">◆ &nbsp; <span data-en="Product + code">Produto + código</span></div></div>
+</div><div class="wrap hero-footer"><div></div><span data-en="DISCOVER THE PORTFOLIO">EXPLORE O PORTFÓLIO</span><a href="#sobre" aria-label="Avançar">↓</a></div></section>
+<section id="sobre" class="section"><div class="wrap columns"><div><p class="kicker">01 / <span data-en="ABOUT ME">SOBRE MIM</span></p><h2 data-en="From curiosity to meaningful solutions.">Da curiosidade às soluções que fazem sentido.</h2></div><div class="about-text"><p class="larger" data-en="I discovered programming while studying Geophysics, and that curiosity became a career in technology. Today I combine analytical thinking, engineering and design to create software for real problems.">Conheci a programação durante a graduação em Geofísica, e aquela curiosidade se transformou em uma carreira em tecnologia. Hoje, combino raciocínio analítico, engenharia e design para criar softwares que resolvem problemas reais.</p><p data-en="With degrees in Geophysics and Systems Analysis and Development, I work with web development, low-code platforms, automation and data. I value clear interfaces, consistent architecture and maintainable code.">Com formação em Geofísica e Análise e Desenvolvimento de Sistemas, atuo com desenvolvimento web, plataformas low-code, automação e dados. Valorizo interfaces claras, arquitetura consistente e código sustentável.</p><div class="qualities"><div><span>◈</span><strong data-en="Analytical thinking">Pensamento analítico</strong><small data-en="Data-informed decisions">Decisões orientadas por dados</small></div><div><span>⌘</span><strong data-en="Practical delivery">Entrega prática</strong><small data-en="From idea to product">Da ideia ao produto</small></div><div><span>↗</span><strong data-en="Continuous learning">Evolução constante</strong><small data-en="Learn, test, improve">Aprender, testar, evoluir</small></div></div></div></div></section>
+<section id="projetos" class="section alt"><div class="wrap"><div class="section-heading"><div><p class="kicker">02 / <span data-en="SELECTED WORK">TRABALHOS SELECIONADOS</span></p><h2 data-en="Projects in practice.">Projetos na prática.</h2></div><p data-en="A selection of solutions I've developed, from web platforms to automation and data analysis.">Uma seleção de soluções que desenvolvi, de plataformas web a automação e análise de dados.</p></div>
+<div class="filters" role="group" aria-label="Filtrar projetos"><button class="active" data-filter="all" aria-pressed="true" data-en="All">Todos</button><button data-filter="web" aria-pressed="false">Web Apps</button><button data-filter="data" aria-pressed="false" data-en="Data">Dados</button><button data-filter="automation" aria-pressed="false" data-en="Automation">Automação</button><button data-filter="tools" aria-pressed="false" data-en="Tools">Ferramentas</button></div>
+<div class="projects">
+<article class="project" data-category="web data"><div class="project-visual visual-fc"><small>FC 27 / ULTIMATE TRACKER</small><div class="mock-number">86<sup>OVR</sup></div><b>TRACK THE GAME.</b></div><div class="project-body"><div class="project-label"><span data-en="SPORTS ANALYTICS">ANÁLISE ESPORTIVA</span><span>01</span></div><h3>FC 27 Ultimate Tracker</h3><p data-en="Web application to track matches, players, formations and performance, combining data visualization and squad management.">Aplicação web para acompanhar partidas, jogadores, formações e desempenho, reunindo visualização de dados e gestão de elenco.</p><div class="tags"><span>JavaScript</span><span>Supabase</span><span>PWA</span></div><div class="project-link muted" data-en="Private project · Case study">Projeto privado · Estudo de caso</div></div></article>
+<article class="project" data-category="web tools"><div class="project-visual visual-hub"><small>MEU HUB</small><div class="mock-hub"><span></span><span></span><span></span><span></span><span></span><span></span></div><b>ONE PLACE. ALL PROJECTS.</b></div><div class="project-body"><div class="project-label"><span data-en="PROJECT MANAGEMENT">GESTÃO DE PROJETOS</span><span>02</span></div><h3>Meu Hub</h3><p data-en="A hub for organizing applications, versions and deployments, making the evolution of different products easier to follow.">Central para organizar aplicações, versões e publicações, facilitando a visão da evolução de diferentes produtos.</p><div class="tags"><span>Web</span><span>Netlify</span><span>GitHub</span></div><a class="project-link" href="https://github.com/camagnum/meu-hub" target="_blank" rel="noopener noreferrer"><span data-en="View repository">Ver repositório</span> ↗</a></div></article>
+<article class="project" data-category="web tools"><div class="project-visual visual-event"><small>EmBBate</small><div class="mock-score">02 <i>:</i> 01</div><b>MATCH DAY · LIVE</b></div><div class="project-body"><div class="project-label"><span data-en="EVENT MANAGEMENT">GESTÃO DE EVENTOS</span><span>03</span></div><h3>EmBBate</h3><p data-en="Football tournament management with check-in, automatic team draw, live scoring and a big-screen scoreboard.">Gestão de torneios de futebol com check-in, sorteio automático de equipes, placar ao vivo e exibição em telão.</p><div class="tags"><span>JavaScript</span><span>Supabase</span><span>PWA</span></div><div class="project-link muted" data-en="Private project · Case study">Projeto privado · Estudo de caso</div></div></article>
+<article class="project" data-category="web tools"><div class="project-visual visual-media"><small>BAHFLIX</small><div class="mock-play">▶</div><b>YOUR MEDIA. YOUR SPACE.</b></div><div class="project-body"><div class="project-label"><span data-en="MEDIA PLATFORM">PLATAFORMA DE MÍDIA</span><span>04</span></div><h3>BAHFLIX</h3><p data-en="A local streaming experience for organizing and accessing personal video libraries on computers and smart TVs.">Experiência de streaming local para organizar e acessar bibliotecas pessoais de vídeo no computador e na smart TV.</p><div class="tags"><span>Node.js</span><span>Tizen</span><span>LAN</span></div><div class="project-link muted" data-en="Local project · Case study">Projeto local · Estudo de caso</div></div></article>
+<article class="project" data-category="data automation"><div class="project-visual visual-data"><small>NBA STATS / PYTHON</small><div class="mock-bars"><i></i><i></i><i></i><i></i><i></i></div><b>DATA INTO INSIGHT.</b></div><div class="project-body"><div class="project-label"><span data-en="DATA ANALYSIS">ANÁLISE DE DADOS</span><span>05</span></div><h3>NBA Stats Analysis</h3><p data-en="An analysis project that collects and processes basketball statistics with Python and structured data.">Projeto de análise que coleta e processa estatísticas de basquete utilizando Python e dados estruturados.</p><div class="tags"><span>Python</span><span>Pandas</span><span>Selenium</span></div><a class="project-link" href="https://github.com/camagnum/analise-nba-stats-json" target="_blank" rel="noopener noreferrer"><span data-en="View repository">Ver repositório</span> ↗</a></div></article>
+<article class="project" data-category="automation tools"><div class="project-visual visual-auto"><small>PYTHON / AUTOMATION</small><div class="mock-flow"><span>URL</span><i>→</i><span>MP3</span><i>/</i><span>MP4</span></div><b>SIMPLIFY THE WORKFLOW.</b></div><div class="project-body"><div class="project-label"><span data-en="AUTOMATION">AUTOMAÇÃO</span><span>06</span></div><h3 data-en="Media converter">Conversor de mídia</h3><p data-en="A Python desktop tool to automate media conversion workflows with a simple graphical interface.">Ferramenta desktop em Python criada para automatizar fluxos de conversão de mídia com interface gráfica simples.</p><div class="tags"><span>Python</span><span>PySimpleGUI</span></div><a class="project-link" href="https://github.com/camagnum/Conversor-YouTube" target="_blank" rel="noopener noreferrer"><span data-en="View repository">Ver repositório</span> ↗</a></div></article>
+</div><div class="more-projects"><span data-en="Want to explore more code and experiments?">Quer conhecer mais códigos e experimentos?</span> <a href="https://github.com/camagnum" target="_blank" rel="noopener noreferrer"><span data-en="Explore GitHub">Explorar GitHub</span> ↗</a></div></div></section>
+<section id="trajetoria" class="section"><div class="wrap columns"><div><p class="kicker">03 / <span data-en="MY JOURNEY">MINHA TRAJETÓRIA</span></p><h2 data-en="An interdisciplinary path.">Uma trajetória multidisciplinar.</h2><p class="aside-copy" data-en="Science, software and continuous learning shape how I approach new challenges.">Ciência, software e aprendizado constante moldam minha forma de encarar novos desafios.</p></div><div class="timeline"><div class="milestone"><span data-en="PROFESSIONAL EXPERIENCE">ATUAÇÃO PROFISSIONAL</span><h3 data-en="Technology & low-code solutions">Tecnologia e soluções low-code</h3><p data-en="Building and improving digital solutions and workflows in a corporate technology environment, with a focus on reliability and business value.">Desenvolvimento e evolução de soluções digitais e fluxos de trabalho em ambiente corporativo de tecnologia, com foco em confiabilidade e valor de negócio.</p></div><div class="milestone"><span data-en="HIGHER EDUCATION">FORMAÇÃO SUPERIOR</span><h3 data-en="Systems Analysis and Development">Análise e Desenvolvimento de Sistemas</h3><p data-en="Technical training in software development, web interfaces and application engineering.">Formação tecnológica em desenvolvimento de software, interfaces web e engenharia de aplicações.</p></div><div class="milestone"><span data-en="HIGHER EDUCATION · UFBA">FORMAÇÃO SUPERIOR · UFBA</span><h3 data-en="Geophysics">Geofísica</h3><p data-en="A scientific foundation in mathematics and analytical problem-solving, where I first learned Fortran and later Python.">Base científica em matemática e resolução analítica de problemas, onde aprendi Fortran e, posteriormente, Python.</p></div><div class="milestone"><span data-en="KNOWLEDGE SHARING">COMPARTILHAMENTO DE CONHECIMENTO</span><h3 data-en="Technology events and presentations">Eventos e apresentações técnicas</h3><p data-en="Technical presentations about low-code and participation in technology events, including ServiceNow AI Summit in 2026.">Apresentações técnicas sobre low-code e participação em eventos de tecnologia, incluindo o ServiceNow AI Summit em 2026.</p></div></div></div></section>
+<section id="competencias" class="section alt"><div class="wrap"><div class="section-heading"><div><p class="kicker">04 / <span data-en="EXPERTISE">COMPETÊNCIAS</span></p><h2 data-en="Tools are means. Solutions are the goal.">Tecnologias são meios. Soluções são o objetivo.</h2></div><p data-en="I choose tools according to the challenge, prioritizing maintainability, user experience and practical value.">Escolho ferramentas conforme o desafio, priorizando manutenção, experiência do usuário e valor prático.</p></div><div class="skills"><div class="skill"><div class="skill-icon">⌘</div><h3>Front-end</h3><p data-en="Accessible, responsive experiences for the web.">Experiências acessíveis e responsivas para a web.</p><div class="tags"><span>Angular</span><span>TypeScript</span><span>JavaScript</span><span>HTML</span><span>CSS</span><span>Bootstrap</span></div></div><div class="skill"><div class="skill-icon">◫</div><h3 data-en="Back-end & data">Back-end e dados</h3><p data-en="Services, integrations and data-based applications.">Serviços, integrações e aplicações orientadas a dados.</p><div class="tags"><span>Python</span><span>Node.js</span><span>PostgreSQL</span><span>Supabase</span><span>SQL</span></div></div><div class="skill"><div class="skill-icon">◇</div><h3 data-en="Low-code & automation">Low-code e automação</h3><p data-en="Efficient workflows supported by sound engineering.">Fluxos eficientes apoiados por boa engenharia.</p><div class="tags"><span>ServiceNow</span><span>Workflows</span><span>APIs</span><span data-en="Automation">Automação</span></div></div><div class="skill"><div class="skill-icon">↗</div><h3 data-en="Delivery & tools">Entrega e ferramentas</h3><p data-en="Building, publishing and continuously evolving software.">Construir, publicar e evoluir software continuamente.</p><div class="tags"><span>Git</span><span>GitHub</span><span>Netlify</span><span>Vercel</span><span>VS Code</span><span>PWA</span></div></div></div></div></section>
+<section id="contato" class="section contact"><div class="wrap"><div class="contact-box"><div class="contact-content"><p class="kicker">05 / <span data-en="CONTACT">CONTATO</span></p><h2 data-en="Have a challenge in mind?">Tem um desafio em mente?</h2><p data-en="Let's talk about your idea, a collaboration or a new opportunity. I'd love to understand what we can build.">Vamos conversar sobre sua ideia, uma colaboração ou uma nova oportunidade. Quero entender o que podemos construir.</p><div class="actions"><a class="btn primary" href="mailto:magnumbenevides@gmail.com?subject=Contato%20pelo%20portf%C3%B3lio"><span data-en="Send an email">Enviar e-mail</span> ↗</a><button class="btn outline" id="copy"><span data-en="Copy email">Copiar e-mail</span> ⧉</button></div><a class="email" href="mailto:magnumbenevides@gmail.com">magnumbenevides@gmail.com</a><p class="copy-status" id="copy-status" role="status" aria-live="polite"></p></div><span class="contact-at" aria-hidden="true">@</span></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-row"><a class="logo" href="#topo"><span class="logo-box">M<span>.</span></span><span>magnum<span class="accent">.</span>dev</span></a><p>© <span id="year">2026</span> Magnum Benevides. <span data-en="Made with purpose.">Feito com propósito.</span></p><div><a href="https://github.com/camagnum" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/magnumbenevides" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="#topo" data-en="Back to top ↑">Voltar ao topo ↑</a></div></div><div class="wrap version">v2.0.0 · <span data-en="Portfolio preview">Prévia do portfólio</span></div></footer>
+</body></html>

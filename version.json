@@ -1,0 +1,9 @@
+{
+  "name": "Portfólio Profissional — Magnum Benevides",
+  "slug": "portfolio-magnum",
+  "version": "2.0.0",
+  "releaseDate": "2026-11-17",
+  "category": "portfolio",
+  "technologies": ["HTML", "CSS", "JavaScript"],
+  "repository": "https://github.com/camagnum/site-portfolio"
+}
